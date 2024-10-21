@@ -1,0 +1,17 @@
+.TransferBox{
+    width: 100%;
+    max-width: 412px;
+    height: 90vh;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TransferForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+}

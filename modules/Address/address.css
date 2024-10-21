@@ -1,0 +1,15 @@
+.AddressBox{
+    width: 100vw;
+    max-width: 412px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.Address{
+    width: 80%;
+    border: 2px solid black;
+}
