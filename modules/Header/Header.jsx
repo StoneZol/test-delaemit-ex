@@ -5,7 +5,7 @@ import { TonClient,fromNano } from "@ton/ton";
 import '@/modules/Header/header.css'
 import { getHttpEndpoint} from '@orbs-network/ton-access';
 import Link from 'next/link';
-import { useHeaderContext } from '../context';
+import { useHeaderContext} from '../context';
 
 
 export default function Header() {
@@ -19,23 +19,17 @@ export default function Header() {
     const fetchBalance = async () =>{
       try {
         const endpoint = await getHttpEndpoint({ network: "testnet" });
-        console.log('endpoint', endpoint);
         const client = new TonClient({ endpoint });
-        console.log('клиент', client);
         const newBalance = await client.getBalance(wallet.account.address);
-        console.log("balance:", newBalance);
         setBalance(fromNano(newBalance))
-        const walletContract = client.open(wallet);
-        const seqno = await walletContract.getSeqno();
-        console.log("seqno:", seqno);
       } catch (error) {
-        console.error('Ошибка:', error);
       }
     }
     fetchBalance()
+    setInterval(()=>{
+      fetchBalance()
+    }, 5000)
   }, [wallet]);
-  
-  console.log('кошелек', wallet);
   return (
     <div className='header'>
     {wallet && <span>Баланс: {balance}</span>} 
