@@ -1,7 +1,7 @@
 .TransferBox{
     width: 100%;
     max-width: 412px;
-    height: 90vh;
+    min-height: 90vh;
     border: 2px solid black;
     display: flex;
     align-items: center;
@@ -15,3 +15,8 @@
     flex-direction: column;
     border: 2px solid black;
 }
+
+
+
+https://testnet.tonapi.io/v2/events/tRDsnECp1XLXx9onDw%mRz%2F4OYqNoEM3wXFyb8oCZNQ%3D
+https://testnet.tonapi.io/v2/events/tRDsnECp1XLXx9onDw%2BmRz%2F4OYqNoEM3wXFyb8oCZNQ%3D

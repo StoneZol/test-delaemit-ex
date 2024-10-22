@@ -7,7 +7,7 @@ import {fromNano} from "@ton/ton";
 
 function toBase64URL(input) {
   let base64 = input;
-  base64 = base64.replace(/\+/g, '%').replace(/\//g, '%2F').replace(/=+$/, '%3D');
+  base64 = base64.replace(/\+/g, '%2B').replace(/\//g, '%2F').replace(/=+$/, '%3D');
   return base64;
 }
 

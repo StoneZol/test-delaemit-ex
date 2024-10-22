@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# test-delaemit-ex
 
-## Getting Started
+Проект **test-delaemit-ex** предназначен для интеграции криптокошелька **TonKeeper** и выполнения переводов в TestNet сети **TON**. Он создан с использованием технологий **Next.js** и **Ton-Connect**.
 
-First, run the development server:
+## Основной стек технологий:
+
+- **Next.js**: Фреймворк для серверного рендеринга на базе React.
+- **Ton-Connect**: Инструмент для подключения криптокошельков TON.
+
+## Функции
+
+- Привязка криптокошелька **TonKeeper**.
+- Выполнение переводов в сети **TON TestNet**.
+- Отслеживание статуса транзакций.
+
+## Установка и запуск приложения
+
+Чтобы развернуть проект локально, выполните следующие шаги:
+
+### 1. Клонирование репозитория
+
+Склонируйте проект с GitHub на свой компьютер:
+
+```bash
+git clone https://github.com/StoneZol/test-delaemit-ex.git
+cd test-delaemit-ex
+```
+
+### 2. Установка зависимостей
+
+Для установки всех необходимых пакетов используйте команду:
+
+```bash
+npm install
+```
+
+### 3. Запуск приложения
+
+Для запуска приложения в режиме разработки используйте команду:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Приложение будет доступно по адресу: `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 4. Сборка приложения
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Для сборки готового приложения используйте:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Использование
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Нажмите  **Connect Wallet** для привязки.
+2. Укажите сумму для перевода в **TestNet**.
+3. Нажмите кнопку "Перевод" для инициации транзакции.
+4. Приложение отслеживает статус транзакции и уведомит об успешном выполнении.
+5. Для создания и пополнения кошелька в тестовой сети используйте @testgiver_ton_bot
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Ссылки
 
-## Deploy on Vercel
+- [Репозиторий на GitHub](https://github.com/StoneZol/test-delaemit-ex)
+- [Деплой на Versel](https://test-delaemit-ex.vercel.app/)
+  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
